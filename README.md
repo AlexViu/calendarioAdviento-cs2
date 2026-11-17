@@ -52,3 +52,14 @@ Panel `ac_cal` dentro de `randompicks_hud.xml/.css` (repo `logros-cs2/addon-rand
 Se dibuja con `custom_hud_layout` igual que StoreHud. `!calendario` lo abre (WASD mover, R cerrar);
 al abrir la casilla del día se muestra solo `AutoShowSeconds`. `!calendario chat` = versión de chat.
 **Activar `"UseHud": true` solo cuando el addon publicado ya tenga el panel** (si no, congela sin mostrar nada).
+
+## Dependencias de terceros y licencias
+
+`lib/StoreApi.dll` es el contrato de la API de [cs2-store](https://github.com/schwarper/cs2-store) de schwarper (API v33),
+licencia [GPL-3.0](https://github.com/schwarper/cs2-store/blob/main/LICENSE). Solo sirve para compilar: **no se copia al
+servidor** con el plugin (en runtime la aporta cs2-store desde `addons/counterstrikesharp/shared/StoreApi`).
+Todos los derechos de esa DLL pertenecen a su autor; el código fuente está en su repositorio.
+
+Las dependencias de NuGet (CounterStrikeSharp.API, MySqlConnector) no se incluyen en el repo: se descargan al compilar.
+El panel del HUD (`ac_cal`) vive en el layout de [RandomPicksHud](https://github.com/torment93/RandomPicksHud) (MIT),
+en el repo [logros-cs2](https://github.com/AlexViu/logros-cs2) (`addon-randompicks/panorama/`).
