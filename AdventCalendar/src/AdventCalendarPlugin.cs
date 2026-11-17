@@ -18,7 +18,7 @@ public partial class AdventCalendarPlugin : BasePlugin, IPluginConfig<AdventConf
 {
     public override string ModuleName => "AdventCalendar";
     public override string ModuleVersion => "1.0.0";
-    public override string ModuleAuthor => "RandomPicks";
+    public override string ModuleAuthor => "Lonza";
     public override string ModuleDescription => "Calendario de adviento: una recompensa de la store por cada día que te conectas.";
 
     private static readonly PluginCapability<IStoreApi?> StoreCapability = new("cs2-store:api");
