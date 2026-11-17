@@ -3,6 +3,12 @@
 Cada día de diciembre que un jugador se conecta se abre su casilla y recibe el premio de ese día
 (créditos, skins, alas, títulos/tags… cualquier ítem de `cs2-store.json`). Los días que no se conecta se pierden.
 
+## Servidores
+Instalado en **minigames** (`/root/cs2-config`, :27015) y **surf** (`/root/cs2-config-surf`, :27016).
+Los dos usan la misma BD de cs2-store (`cs2_store_db`), así que comparten casillas y créditos: **una casilla al día por
+jugador en total**, entre en el servidor que entre. Cada servidor tiene su propio `cs2-store.json`: los ítems `xmas_*`
+están añadidos en los dos.
+
 ## Build / despliegue
     dotnet build -c Release AdventCalendar
     # copiar bin/Release/net10.0/{AdventCalendar.dll,.deps.json,.pdb,MySqlConnector.dll}
