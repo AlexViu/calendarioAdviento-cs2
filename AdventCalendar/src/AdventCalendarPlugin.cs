@@ -227,7 +227,8 @@ public partial class AdventCalendarPlugin : BasePlugin, IPluginConfig<AdventConf
                 {
                     _inFlight.Remove(steamId);
                     foreach (var d in taken) DeliverOrRelease(steamId, year, d);
-                    if (claimed is not null) RunHooks(steamId, claimed);
+                    // Con un día simulado (css_adviento_dia) no se dan logros: son pruebas.
+                    if (claimed is not null && _simulatedDay is null) RunHooks(steamId, claimed);
                 });
             }
         });
