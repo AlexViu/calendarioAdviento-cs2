@@ -106,6 +106,20 @@ public partial class AdventCalendarPlugin
         _hud.SetHasClassForPlayer(p, id, cls, on);
     }
 
+    [CounterStrikeSharp.API.Core.Attributes.Registration.ConsoleCommand("css_adviento_debug", "Admin: estado del HUD del calendario")]
+    public void CmdHudDebug(CCSPlayerController? player, CounterStrikeSharp.API.Modules.Commands.CommandInfo cmd)
+    {
+        if (!IsAdmin(player)) { cmd.ReplyToCommand("Sin permisos."); return; }
+        cmd.ReplyToCommand($"[Adviento] UseHud={Config.UseHud} layout={Config.HudLayout} views={_views.Count} sent={_sent.Count}");
+        foreach (var e in Utilities.FindAllEntitiesByDesignerName<CCSCustomHudLayout>("custom_hud_layout"))
+        {
+            // La API solo deja leer cuántos hay (los textos de NetworkedVector<string> no son accesibles).
+            cmd.ReplyToCommand($"  #{e.Index} layout={e.StrLayout} panels={e.PanelIds.Count} classes={e.ClassNames.Count} vars={e.DialogVariableNames.Count} states={e.PlayerLayoutStates.Count}");
+        }
+        foreach (var (slot, v) in _views)
+            cmd.ReplyToCommand($"  view slot={slot} sel={v.Sel} interactive={v.Interactive} claimed={v.Claimed.Count} frozen={v.Frozen}");
+    }
+
     // ───────────────────────── Abrir / cerrar ─────────────────────────
 
     /// <summary>
@@ -114,7 +128,12 @@ public partial class AdventCalendarPlugin
     /// </summary>
     private bool ShowHud(CCSPlayerController player, bool interactive, int? select = null, string msg = "")
     {
-        if (!Config.UseHud || !EnsureHud()) return false;
+        if (!Config.UseHud) return false;
+        if (!EnsureHud())
+        {
+            Logger.LogWarning("[AdventCalendar] No hay custom_hud_layout con layout '{Layout}': se usa el chat.", Config.HudLayout);
+            return false;
+        }
         var steamId = player.SteamID;
         var year = CalendarYear;
 
