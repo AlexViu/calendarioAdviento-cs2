@@ -1,0 +1,210 @@
+{
+  "ConfigVersion": 1,
+  "Enabled": true,
+  "Year": 0,
+  "Month": 12,
+  "TimeZone": "Europe/Madrid",
+  "UtcOffsetHours": 1,
+  "DelayAfterConnectSeconds": 5,
+  "DuplicateItemCredits": 500,
+  "AnnounceToAll": true,
+  "AutoEquipItems": false,
+  "AdminFlag": "@css/root",
+  "ChatPrefix": "{green}[Adviento]{default}",
+  "UseHud": false,
+  "HudLayout": "panorama/layout/custom_game/randompicks_hud.xml",
+  "FreezePlayer": true,
+  "AutoShowSeconds": 6,
+  "RevealFutureRewards": false,
+  "AchievementHooks": [
+    {
+      "MinClaims": 1,
+      "Day": 0,
+      "Command": "css_logro_give #{userid} xmas_advent_1"
+    },
+    {
+      "MinClaims": 10,
+      "Day": 0,
+      "Command": "css_logro_give #{userid} xmas_advent_10"
+    },
+    {
+      "MinClaims": 25,
+      "Day": 0,
+      "Command": "css_logro_give #{userid} xmas_advent_25"
+    },
+    {
+      "MinClaims": 0,
+      "Day": 24,
+      "Command": "css_logro_give #{userid} xmas_nochebuena"
+    },
+    {
+      "MinClaims": 0,
+      "Day": 25,
+      "Command": "css_logro_give #{userid} xmas_navidad"
+    }
+  ],
+  "Days": {
+    "1": [
+      {
+        "Type": "credits",
+        "Credits": 300
+      }
+    ],
+    "2": [
+      {
+        "Type": "credits",
+        "Credits": 300
+      }
+    ],
+    "3": [
+      {
+        "Type": "item",
+        "UniqueId": "xmas_ct_elfo"
+      }
+    ],
+    "4": [
+      {
+        "Type": "credits",
+        "Credits": 400
+      }
+    ],
+    "5": [
+      {
+        "Type": "credits",
+        "Credits": 500
+      }
+    ],
+    "6": [
+      {
+        "Type": "item",
+        "UniqueId": "xmas_st_reno"
+      }
+    ],
+    "7": [
+      {
+        "Type": "credits",
+        "Credits": 500
+      }
+    ],
+    "8": [
+      {
+        "Type": "item",
+        "UniqueId": "xmas_grinch"
+      }
+    ],
+    "9": [
+      {
+        "Type": "credits",
+        "Credits": 600
+      }
+    ],
+    "10": [
+      {
+        "Type": "credits",
+        "Credits": 700
+      }
+    ],
+    "11": [
+      {
+        "Type": "item",
+        "UniqueId": "xmas_ct_nieve"
+      }
+    ],
+    "12": [
+      {
+        "Type": "credits",
+        "Credits": 800
+      }
+    ],
+    "13": [
+      {
+        "Type": "credits",
+        "Credits": 900
+      }
+    ],
+    "14": [
+      {
+        "Type": "item",
+        "UniqueId": "xmas_wingedfury_wings"
+      }
+    ],
+    "15": [
+      {
+        "Type": "credits",
+        "Credits": 1000
+      }
+    ],
+    "16": [
+      {
+        "Type": "item",
+        "UniqueId": "xmas_st_grinch"
+      }
+    ],
+    "17": [
+      {
+        "Type": "credits",
+        "Credits": 1000
+      }
+    ],
+    "18": [
+      {
+        "Type": "item",
+        "UniqueId": "xmas_phoenix"
+      }
+    ],
+    "19": [
+      {
+        "Type": "credits",
+        "Credits": 1200
+      }
+    ],
+    "20": [
+      {
+        "Type": "item",
+        "UniqueId": "xmas_ct_espiritu"
+      }
+    ],
+    "21": [
+      {
+        "Type": "credits",
+        "Credits": 1500
+      }
+    ],
+    "22": [
+      {
+        "Type": "credits",
+        "Credits": 1500
+      }
+    ],
+    "23": [
+      {
+        "Type": "item",
+        "UniqueId": "xmas_st_navidad"
+      }
+    ],
+    "24": [
+      {
+        "Type": "credits",
+        "Credits": 3000
+      }
+    ],
+    "25": [
+      {
+        "Type": "item",
+        "UniqueId": "xmas_santa_t"
+      },
+      {
+        "Type": "item",
+        "UniqueId": "xmas_santa_ct"
+      },
+      {
+        "Type": "item",
+        "UniqueId": "xmas_ct_papanoel"
+      },
+      {
+        "Type": "credits",
+        "Credits": 5000
+      }
+    ]
+  }
+}
