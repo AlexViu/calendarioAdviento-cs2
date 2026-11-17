@@ -11,7 +11,7 @@
   "AutoEquipItems": false,
   "AdminFlag": "@css/root",
   "ChatPrefix": "{green}[Adviento]{default}",
-  "UseHud": false,
+  "UseHud": true,
   "HudLayout": "panorama/layout/custom_game/randompicks_hud.xml",
   "FreezePlayer": true,
   "AutoShowSeconds": 6,
