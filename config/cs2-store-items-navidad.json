@@ -1,0 +1,136 @@
+{
+  "playerskin": {
+    "CT": {
+      "Santa Claus [Navidad]": {
+        "uniqueid": "xmas_santa_ct",
+        "model": "characters/models/nozb1/santa_player_model/santa_player_model_ct.vmdl",
+        "armModel": "",
+        "type": "playerskin",
+        "price": "0",
+        "slot": "3",
+        "disable_leg": "false",
+        "expiration": "0",
+        "hide": "true"
+      }
+    },
+    "T": {
+      "Santa Claus [Navidad]": {
+        "uniqueid": "xmas_santa_t",
+        "model": "characters/models/nozb1/santa_player_model/santa_player_model.vmdl",
+        "armModel": "",
+        "type": "playerskin",
+        "price": "0",
+        "slot": "2",
+        "disable_leg": "false",
+        "expiration": "0",
+        "hide": "true"
+      },
+      "El Grinch [Navidad]": {
+        "uniqueid": "xmas_grinch",
+        "model": "characters/models/nozb1/the_grinch_player_model/the_grinch_player_model.vmdl",
+        "armModel": "",
+        "type": "playerskin",
+        "price": "0",
+        "slot": "1",
+        "disable_leg": "false",
+        "expiration": "0",
+        "hide": "true"
+      },
+      "Phoenix [Navidad]": {
+        "uniqueid": "xmas_phoenix",
+        "model": "characters/models/nozb1/glaze_pack/phoenix_player_model/phoenix_player_model.vmdl",
+        "armModel": "",
+        "type": "playerskin",
+        "price": "0",
+        "slot": "1",
+        "disable_leg": "false",
+        "expiration": "0",
+        "hide": "true"
+      }
+    }
+  },
+  "Wings": {
+    "Winged Fury [Navidad]": {
+      "uniqueid": "xmas_wingedfury_wings",
+      "model": "characters/nozb1/wings/fortnite/wingedfury/wings_wingedfury.vmdl",
+      "type": "wings",
+      "price": "0",
+      "slot": "1",
+      "animation": "",
+      "hide": "true"
+    }
+  },
+  "Tags": {
+    "Score Tag": {
+      "Reno [Navidad]": {
+        "uniqueid": "xmas_st_reno",
+        "value": "Reno",
+        "pre": "false",
+        "type": "scoretag",
+        "price": "0",
+        "slot": "1",
+        "hide": "true"
+      },
+      "Grinch [Navidad]": {
+        "uniqueid": "xmas_st_grinch",
+        "value": "Grinch",
+        "pre": "false",
+        "type": "scoretag",
+        "price": "0",
+        "slot": "1",
+        "hide": "true"
+      },
+      "Navidad [Navidad]": {
+        "uniqueid": "xmas_st_navidad",
+        "value": "Navidad",
+        "pre": "false",
+        "type": "scoretag",
+        "price": "0",
+        "slot": "1",
+        "hide": "true"
+      }
+    },
+    "Chat Tag": {
+      "Elfo [Navidad]": {
+        "uniqueid": "xmas_ct_elfo",
+        "value": "[Elfo]",
+        "pre": "false",
+        "color": "{green}",
+        "type": "chattag",
+        "price": "0",
+        "slot": "1",
+        "hide": "true"
+      },
+      "Muñeco de Nieve [Navidad]": {
+        "uniqueid": "xmas_ct_nieve",
+        "value": "[Muñeco de Nieve]",
+        "pre": "false",
+        "color": "{lightblue}",
+        "type": "chattag",
+        "price": "0",
+        "slot": "1",
+        "hide": "true"
+      },
+      "Espíritu Navideño [Navidad]": {
+        "uniqueid": "xmas_ct_espiritu",
+        "value": "[Espíritu Navideño]",
+        "pre": "false",
+        "color": "{gold}",
+        "type": "chattag",
+        "price": "0",
+        "slot": "1",
+        "hide": "true"
+      },
+      "Papá Noel [Navidad]": {
+        "uniqueid": "xmas_ct_papanoel",
+        "value": "[Papá Noel]",
+        "pre": "false",
+        "color": "{red}",
+        "type": "chattag",
+        "price": "0",
+        "slot": "1",
+        "hide": "true"
+      }
+    }
+  }
+}
